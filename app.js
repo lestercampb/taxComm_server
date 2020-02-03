@@ -8,7 +8,7 @@ app.use(express.json());
 const comment = require('./controllers/commcontroller')
 app.use(require('./middleware/headers'))
 
-app.listen(3000, function() {
+app.listen(process.env.PORT, function() {
     console.log('Hello I am at 3000')
 });
 
